@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="shortcut icon" href="gambar1.jpg" type="image/x-icon">
+
+    <!-- Link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- End Link bootstrap -->
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- End of link icon -->
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+        .container .text-center img {
+            border-color: black;
+            border-width: 5px;
+        }
+
+        .nav-item {
+            font-family: 'montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container">
+            <a class="navbar-brand fs-2 fw-bold text-white">Sndyy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active fs-4 text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link fs-4 text-white" href="#About">About me</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link fs-4 text-white" href="#Project">My project</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link fs-4 text-white" href="#Contact">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- about -->
+    <div class="container">
+        <section class="text-center">
+            <img class="img-thumbnail rounded-circle " style="width: 300px; margin-bottom: 30px; margin-top: 30px;"
+                src="gambar1.jpg" alt="">
+            <h1 class="display-1"> Naufal Sandy W </h1>
+            <h3 class="display-6"> Student | Programmer </h3>
+
+            <h2 style="margin-top: 150px; margin-bottom: 40px;" id="About"> About me </h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    Hello nama saya Naufal saya pelajar dari SMKN 1 CIBINONG, saya juga seorang programmer
+                </div>
+                <div class="col-md-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias reiciendis voluptate minus
+                    ullam? Blanditiis, cum tenetur! Reiciendis at optio aut incidunt, soluta ullam perferendis. Alias
+                    quam itaque dolor officia!
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- end of about -->
+
+    <!-- My priject -->
+    <div class="container">
+        <selection id="Project">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 style="margin-top: 150px; margin-bottom: 40px;">My Project</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <img src="gambar2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Eugeo</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <img src="gambar3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kirito</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <img src="gambar4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Asuna</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </selection>
+    </div>
+    <!-- End of my project -->
+
+    <!-- My contact -->
+    <div class="container">
+        <section id="Contact">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 style="margin-top: 150px; margin-bottom: 40px;" >Contact Me</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <form action="https://formspree.io/f/mdorjkqr" method="POST">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Username</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Alamat</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1" name="address">
+                        </div>
+                        <div class="mb-3">
+                           <label for="pesan" class="form-label">Pesan</label>
+                           <textarea type="text" class="form-control" id="pesan" name="message"> </textarea>
+                        </div>
+                        <button type="submit" style="margin-bottom: 100px" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End of contact -->
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center fw-bold bg-body-tertiary" >
+            <div class="col bg-black">
+                <p class="text-white" style="padding: 10px;">Created <i class="bi bi-heart"></i> With By Naufal Sandy Wibowo | X SIJA 1</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of footer -->
+
+    <!-- Link JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- End Link JS bootstrap -->
+</body>
+
+</html>
